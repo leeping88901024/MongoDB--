@@ -59,3 +59,7 @@ MongoDB提供[db.createCollection()](https://docs.mongodb.com/manual/reference/m
 #### **文档验证**
 #### **修改文档结构**
 #### **唯一标识符**
+
+## 文档
+MongoDB以BSON文档存储数据记录，BSON是JSON文档的二进制形式。可以认为他比JSON包含更多的数据类型。关于BSON的说明，请看[bsonspec.org](http://bsonspec.org/)，还有[BSON类型](https://docs.mongodb.com/manual/reference/bson-types/)  
+![img1](https://docs.mongodb.com/manual/_images/crud-annotated-document.bakedsvg.svg ''mig1'')
