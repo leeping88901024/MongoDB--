@@ -38,11 +38,13 @@ MongoDB存储 [BSON 文档](https://docs.mongodb.com/manual/core/document/#bson-
 选择一个数据库使用，在[mongo](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo)shell，使用 `<db>` 语句，如下所示：
 > use myDB
 #### **创建数据库**
-如果一个数据库不存在，当你从数据库存储数据的时候MongoDB创建数据库。这样，你可以转换到一个没有存在的数据库执行以下的[mongo](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo)shell
+如果一个数据库不存在，当你从数据库存储数据的时候MongoDB创建数据库。这样，你可以转换到一个没有存在的数据库执行以下的[mongo](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo)shell  
+
 > use myNewDB
-> db.myNewCollection1.insertOne({ x: 1 })
-<p>[insertOne()]()操作同时创建数据库 `myNewDB` 和集合 `myNewCollection1`，当然，如果它们不存在的话。
-有关数据库名命名的限制，请看[命名限制](https://docs.mongodb.com/manual/reference/limits/#restrictions-on-db-names)<p>
+> db.myNewCollection1.insertOne({ x: 1 })  
+
+[insertOne()]()操作同时创建数据库 `myNewDB` 和集合 `myNewCollection1`，当然，如果它们不存在的话。
+有关数据库名命名的限制，请看[命名限制](https://docs.mongodb.com/manual/reference/limits/#restrictions-on-db-names)
 ### 集合
 MongoDB在集合里面存储文档，集合在关系型数据库里类似于表。
 #### **创建集合**
