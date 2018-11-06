@@ -1,6 +1,6 @@
 # 简绍
 ## 开始
-  MongoDB 是开源的文档数据库，它提供高性能、高可用、自动扩展的特性。
+MongoDB 是开源的文档数据库，它提供高性能、高可用、自动扩展的特性。  
 ---
 ### 文档数据库
   一条记录在MongoDB里就是一个文档，它是包含字段和值这样成对的数据结构。MongoDB的文档和JSON对象类似。字段的值可以包含其他文档、数组、以及文档组成的数组。
@@ -41,7 +41,6 @@ MongoDB存储 [BSON 文档](https://docs.mongodb.com/manual/core/document/#bson-
 如果一个数据库不存在，当你从数据库存储数据的时候MongoDB创建数据库。这样，你可以转换到一个没有存在的数据库执行以下的[mongo](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo)  shell  
 
 > use myNewDB  
-
 > db.myNewCollection1.insertOne({ x: 1 })  
 
 [insertOne()]()操作同时创建数据库 `myNewDB` 和集合 `myNewCollection1`，当然，如果它们不存在的话。
