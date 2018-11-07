@@ -156,7 +156,8 @@ var mydoc = {
 
 ## 4. BSON 类型
 &emsp;&emsp;[BSON](https://docs.mongodb.com/manual/reference/glossary/#term-bson) 是序列化二进制格式用来存储文档，并且远程过程在MongoDB中调用。BSON 的说明在 [bsonspec.org](http://bsonspec.org/)。  
-&emsp;&emsp;每种 BSON 类型都有整数和字符串标识如下表所示：
+&emsp;&emsp;每种 BSON 类型都有整数和字符串标识如下表所示：  
+
 类型|数字|别名|备注  
 ---|:--:|:--:|---
 Double|1|"double"|  
