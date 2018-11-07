@@ -186,5 +186,23 @@ Max key|127|"maxKey"|
 &emsp;&emsp;如果你想把 BSON 转换成 JSON ，请参考 [JSON 扩展](https://docs.mongodb.com/manual/reference/mongodb-extended-json/)。  
 &emsp;&emsp;下列讨论特殊情况下的几种特别 BSON 类型。
 ## 5. 比较和排序规则
+&emsp;&emsp; 当你比较 BSON 类型值的的时候，MongoDB使用下列的比较顺序，从低到高：  
+1. MinKey(internal type)
+2. Null
+3. Number(ints,longs,doubles,decimals)
+4. Symbol,String
+5. Object
+6. Array
+7. BinData
+8. ObjectId
+9. Boolean
+10. Date
+11. Timestamp
+12. Regular Expression
+13. MaxKey(internal type)
+
 ## 6. MongoDB JSON 扩展
+&emsp;&emsp;[JSON](https://docs.mongodb.com/manual/reference/glossary/#term-json) 仅作为 BSON 的子类型。为保持类型信息，MongoDB 对 JSON 格式添加了如下的扩展：  
+* 严格模式 
+* *mongo shell* 模式
 
