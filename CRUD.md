@@ -122,5 +122,4 @@ transactions|[transactions](https://docs.mongodb.com/manual/core/transactions/)
 &emsp;&emsp;这部分提供在 MongoDB中有关 CURD 的额外信息。  
 &emsp;&emsp;**原子性、一致性、分布式操作**
 * 原子性和事务
-* 隔离读，
 
