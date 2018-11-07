@@ -157,9 +157,6 @@ var mydoc = {
 ## 4. BSON 类型
 &emsp;&emsp;[BSON](https://docs.mongodb.com/manual/reference/glossary/#term-bson) 是序列化二进制格式用来存储文档，并且远程过程在MongoDB中调用。BSON 的说明在 [bsonspec.org](http://bsonspec.org/)。  
 &emsp;&emsp;每种 BSON 类型都有整数和字符串标识如下表所示：
-
-## 5. 比较和排序规则
-## 6. MongoDB JSON 扩展
 类型|数字|别名|备注  
 ---|:--:|:--:|---
 Double|1|"double"|  
@@ -183,3 +180,11 @@ Timestamp|17|"timestamp"|
 Decimal128|19|"decimal"| 在版本3.4|
 Min key|-1|"minKey"|
 Max key|127|"maxKey"|
+
+&emsp;&emsp;你可以使用操作符 [${type}](https://docs.mongodb.com/manual/reference/operator/query/type/#op._S_type) 通过 BSON 类型查询文档。聚合操作 *$type* 返回使用上述 BSON 类型字符串表达式的类型。  
+&emsp;&emsp;判断字段的类型，查看 [Check Types in mongo shell](https://docs.mongodb.com/manual/core/shell-types/#check-types-in-shell)。  
+&emsp;&emsp;如果你想把 BSON 转换成 JSON ，请参考 [JSON 扩展](https://docs.mongodb.com/manual/reference/mongodb-extended-json/)。  
+&emsp;&emsp;下列讨论特殊情况下的几种特别 BSON 类型。
+## 5. 比较和排序规则
+## 6. MongoDB JSON 扩展
+
