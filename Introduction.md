@@ -27,21 +27,21 @@
 ### 开始前
 ---
 &emsp;&emsp;教程需要你链接以下几个：
-* MongoDB Atlas Free Tier Cluster: MongoDB是快速、简单的方法来开始MongoDB。你可以从[创建 Atlas Free Tier Cluster](https://docs.mongodb.com/manual/tutorial/atlas-free-tier-setup/#create-free-tier-manual)教程开始使用MongoDB Atlas。
-* 本地MongoDB数据库: 在本地安装MongoDB数据库，请看[安装MongoDB](https://docs.mongodb.com/manual/installation/#tutorial-installation)
+* MongoDB Atlas Free Tier Cluster: MongoDB是快速、简单的方法来开始MongoDB。你可以从 [创建 Atlas Free Tier Cluster](https://docs.mongodb.com/manual/tutorial/atlas-free-tier-setup/#create-free-tier-manual)教程开始使用MongoDB Atlas。
+* 本地MongoDB数据库: 在本地安装MongoDB数据库，请看 [安装MongoDB](https://docs.mongodb.com/manual/installation/#tutorial-installation)
 ## 快速创建数据库
-[MongoDB Atlas](https://www.mongodb.com/cloud/atlas?utm_source=atlas-free-tier-setup&utm_campaign=20-docs-in-20-days&utm_medium=docs) 是云端可提供、运行、监控、和维护MongoDB的部署。可以快速、简单、自由的方式开始使用MongoDB。安装和运行本地MongoDB，请看[安装MongoDB](https://docs.mongodb.com/manual/installation/#tutorial-installation)
-下面的教程使用[MongoDB Node.js Driver](http://mongodb.github.io/node-mongodb-native/2.2/)连接Atlas自由层簇。
+[MongoDB Atlas](https://www.mongodb.com/cloud/atlas?utm_source=atlas-free-tier-setup&utm_campaign=20-docs-in-20-days&utm_medium=docs) 是云端可提供、运行、监控、和维护MongoDB的部署。可以快速、简单、自由的方式开始使用MongoDB。安装和运行本地MongoDB，请看 [安装MongoDB](https://docs.mongodb.com/manual/installation/#tutorial-installation)
+下面的教程使用 [MongoDB Node.js Driver](http://mongodb.github.io/node-mongodb-native/2.2/) 连接Atlas自由层簇。
 1. 创建Atlas用户账号
 ## 2. 数据库和集合
-&emsp;&emsp;MongoDB存储 [BSON 文档](https://docs.mongodb.com/manual/core/document/#bson-document-format),数据记录在集合里。
+&emsp;&emsp;MongoDB存储 [BSON 文档](https://docs.mongodb.com/manual/core/document/#bson-document-format) ,数据记录在集合里。
 ### 数据库
 ---
 在MongoDB，数据库持有文档的集合。
 选择一个数据库使用，在&ensp;[mongo](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo)&ensp;shell，使用 `<db>` 语句，如下所示：
 > use myDB
 #### **创建数据库**
-&emsp;&emsp;如果一个数据库不存在，当你从数据库存储数据的时候MongoDB创建数据库。这样，你可以转换到一个没有存在的数据库执行以下的[mongo](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo)  shell  
+&emsp;&emsp;如果一个数据库不存在，当你从数据库存储数据的时候MongoDB创建数据库。这样，你可以转换到一个没有存在的数据库执行以下的 [mongo](https://docs.mongodb.com/manual/reference/program/mongo/#bin.mongo)  shell  
 
 > use myNewDB  
 > db.myNewCollection1.insertOne({ x: 1 })  
@@ -65,7 +65,7 @@ MongoDB在集合里面存储文档，集合在关系型数据库里类似于表�
 #### **唯一标识符**
 
 ## 3. 文档
-&emsp;&emsp;MongoDB以BSON文档存储数据记录，BSON是JSON文档的二进制形式。可以认为他比JSON包含更多的数据类型。关于BSON的说明，请看[bsonspec.org](http://bsonspec.org/)，还有[BSON类型](https://docs.mongodb.com/manual/reference/bson-types/)  
+&emsp;&emsp;MongoDB以BSON文档存储数据记录，BSON是JSON文档的二进制形式。可以认为他比JSON包含更多的数据类型。关于BSON的说明，请看 [bsonspec.org](http://bsonspec.org/)，还有 [BSON类型](https://docs.mongodb.com/manual/reference/bson-types/)  
 ![img1](https://docs.mongodb.com/manual/_images/crud-annotated-document.bakedsvg.svg "mig1")  
  ### 文档结构
  ---
@@ -104,11 +104,11 @@ var mydoc = {
 * 字段名称**不能**包含`null`字符.
 * 顶级字段名称不能以`$`符号开始。  
 &emsp;&emsp;另外，从MongoDB 3.6开始，服务器允许存储包含`.,$`的字段名称。  
-&emsp;&emsp;BSON文档可能包含多个相同名称的字段。多数的[MongoDB 接口](https://docs.mongodb.com/manual/applications/drivers/)，然而表示MongoDB数据结构，（哈希表）不支持重复的命名。如果你需要重复字段命名的文档，查看[驱动文档](https://docs.mongodb.com/manual/applications/drivers/)。  
+&emsp;&emsp;BSON文档可能包含多个相同名称的字段。多数的 [MongoDB 接口](https://docs.mongodb.com/manual/applications/drivers/) ，然而表示MongoDB数据结构，（哈希表）不支持重复的命名。如果你需要重复字段命名的文档，查看 [驱动文档](https://docs.mongodb.com/manual/applications/drivers/)。  
 &emsp;&emsp;有些被内部MongoDB进程创建的文档可能包含重复的字段名，但是没有MongoDB进程会在已存用户文档中复制字段。
 
 &emsp;&emsp;**字段值限制**  
-&emsp;&emsp;对于已索引的集合，被索引字段的值有[最大索引关键字长](https://docs.mongodb.com/manual/reference/limits/#Index-Key-Limit)限制。  
+&emsp;&emsp;对于已索引的集合，被索引字段的值有 [最大索引关键字长](https://docs.mongodb.com/manual/reference/limits/#Index-Key-Limit) 限制。  
 ### 点标记（Dot Notation）
 ---
 &emsp;&emsp;MongoDB使用*点标记(dot notation)*获取嵌套文档的字段或者数组的元素。  
