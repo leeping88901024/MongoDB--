@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient;
 var uri = 'mongodb://test:test@cluster0-shard-00-00-avsto.azure.mongodb.net:27017,cluster0-shard-00-01-avsto.azure.mongodb.net:27017,cluster0-shard-00-02-avsto.azure.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true';
 MongoClient.connect(uri, { useNewUrlParser: true }, function(err, client) {
     // 先获取集合，所有的操作都基于集合，集合在关系数据库中相当于 表
-    const myNewCollection = client.db('myDB').collection('myNewCollection');
+    const myNewCollection = client.db('myDBTest').collection('createCollection');
     
     /**
      * db.collection.insertOne()

@@ -5,4 +5,4 @@
 ---
 ## 2. 使用 mongo shell 
 ## 3. Tab 补全和其他键盘快捷方式
-### 4. 退出 mongo shell 
+## 4. 退出 mongo shell 
