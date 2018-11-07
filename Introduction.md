@@ -57,8 +57,8 @@ MongoDB在集合里面存储文档，集合在关系型数据库里类似于表�
 > db.myNewCollection3.createIndex({ y: 1 })
 
 #### **显示创建**
-&emsp;&emsp;MongoDB提供[db.createCollection()](https://docs.mongodb.com/manual/reference/method/db.createCollection/#db.createCollection)方法配合其他参数显示的创建集合。比如设置最大值或者文档验证规则。如果你没有指定这些参数，当你从集合里存数据的时候MongoDB会创建集合所以你没有必要显示的创建集合。
-修改这些结合的参数，参考[collMod](https://docs.mongodb.com/manual/reference/command/collMod/#dbcmd.collMod)
+&emsp;&emsp;MongoDB 提供 [db.createCollection()](https://docs.mongodb.com/manual/reference/method/db.createCollection/#db.createCollection) 方法配合其他参数显示的创建集合。比如设置最大值或者文档验证规则。如果你没有指定这些参数，当你从集合里存数据的时候MongoDB会创建集合所以你没有必要显示的创建集合。
+修改这些结合的参数，参考 [collMod](https://docs.mongodb.com/manual/reference/command/collMod/#dbcmd.collMod)
 
 #### **文档验证**
 #### **修改文档结构**
