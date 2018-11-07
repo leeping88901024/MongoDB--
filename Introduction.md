@@ -154,5 +154,32 @@ var mydoc = {
 ---
 [Thinking in documents Part 1](https://www.mongodb.com/blog/post/thinking-documents-part-1?jmp=docs)
 
+## 4. BSON 类型
+&emsp;&emsp;[BSON](https://docs.mongodb.com/manual/reference/glossary/#term-bson) 是序列化二进制格式用来存储文档，并且远程过程在MongoDB中调用。BSON 的说明在 [bsonspec.org](http://bsonspec.org/)。  
+&emsp;&emsp;每种 BSON 类型都有整数和字符串标识如下表所示：
 
-
+## 5. 比较和排序规则
+## 6. MongoDB JSON 扩展
+类型|数字|别名|备注  
+---|:--:|:--:|---
+Double|1|"double"|  
+String|2|"string"|
+Object|3|"object"|
+Array|4|"array"|
+Binary data|5|"binData"|
+Undefined|6|"undefined"| 过时|
+ObjectId|7|"objectId"|
+Boolean|8|"bool"|
+Date|9|"date"|
+Null|10|"null"|
+Regular Expression|11|""regex|
+DBPoniter|12|"dbPointer"|过时|
+JavaScript|13|"javascript"|
+Symbol|14|"symbol"|过时|
+JavaScript(with scope)|15|"javascriptWithScope"|
+32-bit integer|16|"int"
+Timestamp|17|"timestamp"|
+64-bite integer|18|"long"
+Decimal128|19|"decimal"| 在版本3.4|
+Min key|-1|"minKey"|
+Max key|127|"maxKey"|
