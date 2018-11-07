@@ -87,11 +87,40 @@ catch (e) {
 ## 7. MongoDB SQL映射表
 ### 术语和概念
 ---
-&emsp;&emsp;
+&emsp;&emsp;下表呈现了多种 SQL 术语和概念，以及它在 MongoDB 中的术语和概念。  
+SQL 术语/概念| MongoDB 术语/概念
+---|:--:|---
+database|[database](https://docs.mongodb.com/manual/reference/glossary/#term-database)
+table|[collection](https://docs.mongodb.com/manual/reference/glossary/#term-collection)
+row|[document](https://docs.mongodb.com/manual/reference/glossary/#term-document) or [BSON](https://docs.mongodb.com/manual/reference/glossary/#term-bson) document
+column|[field](https://docs.mongodb.com/manual/reference/glossary/#term-field)
+index|[index](https://docs.mongodb.com/manual/reference/glossary/#term-index)
+table join|[$look](https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/#pipe._S_lookup),embedded documents
+primary key|[primary key](https://docs.mongodb.com/manual/reference/glossary/#term-primary-key)
+Specify any unique column or column combination as primary key.|In MongoDB, the primary key is automaticlly set to the [_id](https://docs.mongodb.com/manual/reference/glossary/#term-id) field. 
+aggregation(e.g.group by)|aggregation pipeline See the [SQL to Aggregation Mapping Chart](https://docs.mongodb.com/manual/reference/sql-aggregation-comparison/)
+transactions|[transactions](https://docs.mongodb.com/manual/core/transactions/)
+
+具体的对应关系查看 [这里](https://docs.mongodb.com/manual/reference/sql-comparison/)
 ## 8. 文本搜素
+&emsp;&emsp;MongoDB 支持查询操作符字符串内容文本搜素。执行文本搜素，MongoDB 使用[文本索引](https://docs.mongodb.com/manual/core/index-text/#index-feature-text)和[$text](https://docs.mongodb.com/manual/reference/operator/query/text/#op._S_text)操作符。
 ## 9. 地理查询
+### 地理空间数据
+---
+&emsp;&emsp;在MongoDB 你可以以 [GeoJSON](https://docs.mongodb.com/manual/geospatial-queries/#geospatial-geojson) 对象存储地理数据，
+### 地理空间索引
+---
+### 地理空间查询
+---
+### 地理空间模型
+---
+### 示例
+---
 ## 10. 隔离读 (Read isolation)(Read consern)
 ## 11. 署名写 (Write Concern)
 ## 12. MongoDB CRUD 概念
-
+&emsp;&emsp;这部分提供在 MongoDB中有关 CURD 的额外信息。  
+&emsp;&emsp;**原子性、一致性、分布式操作**
+* 原子性和事务
+* 隔离读，
 
